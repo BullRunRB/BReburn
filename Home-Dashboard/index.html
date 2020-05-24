@@ -18,7 +18,7 @@
 
 
     <!-- Title -->
-    <title>BullRun V4</title>
+    <title>BullRun Reburn</title>
 
     <!-- Bootstrap css -->
     <link href="https://bullrun.live/Content/assets/plugins/bootstrap-4.1.3/css/bootstrap.min.css" rel="stylesheet" />
@@ -93,8 +93,8 @@
                 <div class="app-header header top-header navbar-collapse ">
                     <div class="container-fluid">
                         <div class="d-flex">
-                            <a class="header-brand" href="https://bullrunv4.github.io/Home-Dashboard">
-                                <h3 style="margin-top: 16px;color: #141670;">BULLRUN V4</h3>
+                            <a class="header-brand" href="https://bullrunreburn.github.io/Home-Dashboard">
+                                <h3 style="margin-top: 16px;color: #141670;">BULLRUN REBURN</h3>
                                 
                                
                             </a>
@@ -112,11 +112,11 @@
                         <div class="line-animations">
                             <ul class="resp-tabs-list hor_1">
                                 
-                                 <li class="resp-tab-active active"><a href="https://bullrunv4.github.io/Home-Dashboard"><span class="side-menu__icon"></span><img src="https://bullrun.live/Content/assets/img/homepage.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Home"></a></li>
-                                <li class="autopool"><a href="https://bullrunv4.github.io/Autopool"><span class="side-menu__icon"></span><img src="https://bullrun.live/Content/assets/img/m2.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Autopool"></a></li>
-                                <li class="trans"><a href="https://bullrunv4.github.io/Transaction"><span class="side-menu__icon"></span><img src="https://bullrun.live/Content/assets/img/m3.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Transations"></a></li>
-                                <li class="team2"><a href="https://bullrunv4.github.io/Team"><span class="side-menu__icon"></span><img src="https://bullrun.live/Content/assets/img/m4.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Team"></a></li>
-                                <li class="media2"><a href="https://bullrunv4.github.io/Media"><span class="side-menu__icon"></span><img src="https://bullrun.live/Content/assets/img/m5.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Media"></a></li>
+                                 <li class="resp-tab-active active"><a href="https://bullrunreburn.github.io/Home-Dashboard"><span class="side-menu__icon"></span><img src="https://bullrun.live/Content/assets/img/homepage.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Home"></a></li>
+                                <li class="autopool"><a href="https://bullrunreburn.github.io/Autopool"><span class="side-menu__icon"></span><img src="https://bullrun.live/Content/assets/img/m2.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Autopool"></a></li>
+                                <li class="trans"><a href="https://bullrunreburn.github.io/Transaction"><span class="side-menu__icon"></span><img src="https://bullrun.live/Content/assets/img/m3.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Transations"></a></li>
+                                <li class="team2"><a href="https://bullrunreburn.github.io/Team"><span class="side-menu__icon"></span><img src="https://bullrun.live/Content/assets/img/m4.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Team"></a></li>
+                                <li class="media2"><a href="https://bullrunreburn.github.io/Media"><span class="side-menu__icon"></span><img src="https://bullrun.live/Content/assets/img/m5.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Media"></a></li>
                              
                                 <li class="logoutuser"><span class="side-menu__icon"></span><img src="https://bullrun.live/Content/assets/img/m6.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Log out"></li>
                           
@@ -133,19 +133,19 @@
 <script> 
 myContractInstance.methods.users(account).call().then(function (result1) {
         
-    $('.currentuseridlink').html("https://bullrunv4.github.io/signup/?referralid=" + result1.id);
+    $('.currentuseridlink').html("https://bullrunreburn.github.io/signup/?referralid=" + result1.id);
 
-    $('.currentuseridlinknew').html("https://link.trustwallet.com/open_url?coin_id=60&url=https://bullrunv4.github.io/signup/?referralid=" + result1.id);
-
-
-
-    $('.currentuseridlink').val("https://bullrunv4.github.io/signup/?referralid=" + result1.id);
-
-    $('.currentuseridlinknew').val("https://link.trustwallet.com/open_url?coin_id=60&url=https://bullrunv4.github.io/signup/?referralid=" + result1.id);
+    $('.currentuseridlinknew').html("https://link.trustwallet.com/open_url?coin_id=60&url=https://bullrunreburn.github.io/signup/?referralid=" + result1.id);
 
 
 
-    $('.sharebutton').attr('data-url', "https://bullrunv4.github.io/signup/?referralid=" + result1.id);
+    $('.currentuseridlink').val("https://bullrunreburn.github.io/signup/?referralid=" + result1.id);
+
+    $('.currentuseridlinknew').val("https://link.trustwallet.com/open_url?coin_id=60&url=https://bullrunreburn.github.io/signup/?referralid=" + result1.id);
+
+
+
+    $('.sharebutton').attr('data-url', "https://bullrunreburn.github.io/signup/?referralid=" + result1.id);
     $('.currentuserid').html(result1.id);
     $('.currentaddress').html(account);
     $('.ethaddress').attr('href', 'https://etherscan.io/address/' + account);
@@ -226,19 +226,19 @@ function getVariableData() {
 
     myContractInstance.methods.users(account).call().then(function (result1) {
         
-            $('.currentuseridlink').html("https://bullrunv4.github.io/signup/?referralid=" + result1.id);
+            $('.currentuseridlink').html("https://bullrunreburn.github.io/signup/?referralid=" + result1.id);
 
-            $('.currentuseridlinknew').html("https://link.trustwallet.com/open_url?coin_id=60&url=https://bullrunv4.github.io/signup/?referralid=" + result1.id);
-
-
-
-            $('.currentuseridlink').val("https://bullrunv4.github.io/signup/?referralid=" + result1.id);
-
-            $('.currentuseridlinknew').val("https://link.trustwallet.com/open_url?coin_id=60&url=https://bullrunv4.github.io/signup/?referralid=" + result1.id);
+            $('.currentuseridlinknew').html("https://link.trustwallet.com/open_url?coin_id=60&url=https://bullrunreburn.github.io/signup/?referralid=" + result1.id);
 
 
 
-            $('.sharebutton').attr('data-url', "https://bullrunv4.github.io/signup/?referralid=" + result1.id);
+            $('.currentuseridlink').val("https://bullrunreburn.github.io/signup/?referralid=" + result1.id);
+
+            $('.currentuseridlinknew').val("https://link.trustwallet.com/open_url?coin_id=60&url=https://bullrunreburn.github.io/signup/?referralid=" + result1.id);
+
+
+
+            $('.sharebutton').attr('data-url', "https://bullrunreburn.github.io/signup/?referralid=" + result1.id);
             $('.currentuserid').html(result1.id);
             $('.currentaddress').html(account);
             $('.ethaddress').attr('href', 'https://etherscan.io/address/' + account);
@@ -264,19 +264,19 @@ function getVariableData() {
     DirectreferralCount();
     myContractInstance.methods.users(account).call().then(function (result1) {
         
-        $('.currentuseridlink').html("https://bullrunv4.github.io/signup/?referralid=" + result1.id);
+        $('.currentuseridlink').html("https://bullrunreburn.github.io/signup/?referralid=" + result1.id);
     
-        $('.currentuseridlinknew').html("https://link.trustwallet.com/open_url?coin_id=60&url=https://bullrunv4.github.io/signup/?referralid=" + result1.id);
-    
-    
-    
-        $('.currentuseridlink').val("https://bullrunv4.github.io/signup/?referralid=" + result1.id);
-    
-        $('.currentuseridlinknew').val("https://link.trustwallet.com/open_url?coin_id=60&url=https://bullrunv4.github.io/signup/?referralid=" + result1.id);
+        $('.currentuseridlinknew').html("https://link.trustwallet.com/open_url?coin_id=60&url=https://bullrunreburn.github.io/signup/?referralid=" + result1.id);
     
     
     
-        $('.sharebutton').attr('data-url', "https://bullrunv4.github.io/signup/?referralid=" + result1.id);
+        $('.currentuseridlink').val("https://bullrunreburn.github.io/signup/?referralid=" + result1.id);
+    
+        $('.currentuseridlinknew').val("https://link.trustwallet.com/open_url?coin_id=60&url=https://bullrunreburn.github.io/signup/?referralid=" + result1.id);
+    
+    
+    
+        $('.sharebutton').attr('data-url', "https://bullrunreburn.github.io/signup/?referralid=" + result1.id);
         $('.currentuserid').html(result1.id);
         $('.currentaddress').html(account);
         $('.ethaddress').attr('href', 'https://etherscan.io/address/' + account);
@@ -573,7 +573,7 @@ window.addEventListener('load', function () {
         
         if (web3.currentProvider.isTrust) {
 
-            const infura = 'https://mainnet.infura.io/v3/a380edd901454cf6ba4b4cefe4c8f7be';
+            const infura = 'https://mainnet.infura.io/v3/7f51db571e904b2eb303b14204eeb782';
             const web3 = new Web3(new Web3.providers.HttpProvider(infura));
             MyContract = new web3.eth.Contract(abi, address);
             myContractInstance = MyContract;
@@ -587,7 +587,7 @@ window.addEventListener('load', function () {
     } else {
         //  const Web3 = require('web3');
 
-        const infura = 'https://mainnet.infura.io/v3/a380edd901454cf6ba4b4cefe4c8f7be';
+        const infura = 'https://mainnet.infura.io/v3/7f51db571e904b2eb303b14204eeb782';
         const web3 = new Web3(new Web3.providers.HttpProvider(infura));
         MyContract = new web3.eth.Contract(abi, address);
         myContractInstance = MyContract;
